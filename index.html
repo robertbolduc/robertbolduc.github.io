@@ -9,27 +9,67 @@
 <script>
     $( document ).ready(function() {
     console.log( "ready!" );
-    $.PostItAll.new("<p style='text-align:left'>Hello <b>world</b></p>");
-    $.PostItAll.new("<p style='text-align:left'>Hello <b>Martin</b></p>");
     $.PostItAll.new({
- content : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+     content : 'Écrire ici',
+     width : 260,
+     height : 260,
+     posX : 20,
+     posY : 20,
+     style : {
+        backgroundcolor : '#D3ECB6',
+        textcolor       : 'black',
+        tresd           : false,
+        fontfamily      : 'verdana',
+        fontsize        : 'small',
+        textshadow      : false,
+        arrow           : 'none',
+     },
+     features : {
+        randomColor     : false,
+     },
+    }); //end new
+
+    $.PostItAll.new({
+ content : 'Écrire ici',
  width : 260,
  height : 260,
  posX : 40,
  posY : 40,
  style : {
-    backgroundcolor : '#fffa3c',
-    textcolor       : '#333333',
-    tresd           : true,
+    backgroundcolor : '#FCEB9C',
+    textcolor       : 'black',
+    tresd           : false,
     fontfamily      : 'verdana',
     fontsize        : 'small',
-    textshadow      : true,
+    textshadow      : false,
     arrow           : 'none',
  },
  features : {
     randomColor     : false,
  },
-});
+}); //end new
+$.PostItAll.new({
+ content : 'Écrire ici',
+ width : 260,
+ height : 260,
+ posX : 60,
+ posY : 60,
+ style : {
+    backgroundcolor : '#C8DFFB',
+    textcolor       : 'black',
+    tresd           : false,
+    fontfamily      : 'verdana',
+    fontsize        : 'small',
+    textshadow      : false,
+    arrow           : 'none',
+ },
+ features : {
+    randomColor     : false,
+ },
+}); //end new
+
+
+
 });
 
 </script>
