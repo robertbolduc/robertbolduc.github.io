@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <!-- CSS -->
+<link rel="stylesheet" href="dist/jquery.postitall.css">
+
+<!-- JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="dist/jquery.postitall.js"></script>
+<script>
+    $( document ).ready(function() {
+    console.log( "ready!" );
+    $.PostItAll.new("<p style='text-align:left'>Hello <b>world</b></p>");
+    $.PostItAll.new("<p style='text-align:left'>Hello <b>Martin</b></p>");
+    $.PostItAll.new({
+ content : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+ width : 260,
+ height : 260,
+ posX : 40,
+ posY : 40,
+ style : {
+    backgroundcolor : '#fffa3c',
+    textcolor       : '#333333',
+    tresd           : true,
+    fontfamily      : 'verdana',
+    fontsize        : 'small',
+    textshadow      : true,
+    arrow           : 'none',
+ },
+ features : {
+    randomColor     : false,
+ },
+});
+});
+
+</script>
+
+
+    </head>
+    <body>
+
+    </body>
+</html>
